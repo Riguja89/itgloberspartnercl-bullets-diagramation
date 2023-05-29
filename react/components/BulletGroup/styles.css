@@ -28,6 +28,26 @@
  }
 
  .bullet__container {
-     display : flex;
-     overflow: auto;
+     display        : flex;
+     overflow       : auto;
+     align-items    : center;
+     margin-bottom  : 30px;
+     justify-content: space-between;
+ }
+
+ .bullet__container::-webkit-scrollbar {
+     height: 4px;
+ }
+
+ .bullet__container::-webkit-scrollbar-track,
+ .bullet__container::-webkit-scrollbar-thumb {
+     background-clip : padding-box;
+     background-color: #dfdfdf;
+     border-right    : 16px solid transparent;
+     border-left     : 16px solid transparent;
+ }
+
+ .bullet__container::-webkit-scrollbar-thumb {
+     background-color: #797979;
+
  }
